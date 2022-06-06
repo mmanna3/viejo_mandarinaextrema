@@ -13,14 +13,22 @@ body {
     width: 300px; 
 }
 
-.spotify-logo-contenedor {
+.youtube-video-contenedor {
+  margin-top: 3em;
+}
+
+.iconos-redes-contenedor {
     position: absolute;
     top: 92%;
-    right: 2%;
+}
+
+.icono-red {
+    height: 40px; 
 }
 
 .spotify {
-    height: 40px; 
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .contenedor-principal {
