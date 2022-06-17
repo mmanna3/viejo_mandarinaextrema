@@ -13,7 +13,7 @@ function InputSecreto() {
     <div className="contenedor-input">
         <div className={estilos.texto}>Escribí la palabra secreta</div>
         <div className={estilos.cursor}>
-            <input className={estilos.input} onChange={onChange} autoFocus value={valor} type="text" size={24} height={40}></input>
+            <input className={estilos.input} onChange={onChange} autoFocus value={valor} type="text"></input>
             {<i></i>}
         </div>        
     </div>
