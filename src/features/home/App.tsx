@@ -4,16 +4,18 @@ import spotify from '../../resources/images/spotify.png';
 import instagram from '../../resources/images/instagram.png';
 import youtube from '../../resources/images/youtube.png';
 import './App.css';
+import InputSecreto from './input/Input';
 
 function App() {
   return (
     <div className="contenedor-principal">
     <img className="mandarina" src={mandarina} alt="mandarina"/>    
-    <div className="youtube-video-contenedor">
+    <InputSecreto/>    
+    {/* <div className="youtube-video-contenedor">
       <iframe height="250" width="320" title="cancion-para-desayunar" 
         src="https://www.youtube.com/embed/wAl7HHFWCIg">
       </iframe>  
-    </div>
+    </div> */}
     <div className="iconos-redes-contenedor">
       <a href="https://instagram.com/mandarina.extrema">
         <img className="icono-red" src={instagram} alt="instagram"/>
