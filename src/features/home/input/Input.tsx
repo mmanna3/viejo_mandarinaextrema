@@ -21,7 +21,9 @@ function InputSecreto({ hayError }: Props) {
       'casi e',
       'ni cerca',
       'la próxima capaz',
-      'frío'
+      'frío',
+      'próximamente: una pista',
+      'la pista: rima con receta'
     ];  
     const numeroRandom = Math.floor(Math.random() * errores.length);
 
