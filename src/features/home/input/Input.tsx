@@ -7,24 +7,45 @@ interface Props {
 
 function InputSecreto({ hayError }: Props) {
   const [valor, setValor] = useState<string>('');
+  const [mensajeDeError, setMensajeDeError] = useState<string | null>(null);
+  const [mensajeDeExito, setMensajeDeExito] = useState<string | null>(null);
 
   const onChange = (event: any) => {
     setValor(event.target.value);
   };
 
   useEffect(() => {
+    const errores = [
+      'uhh',
+      'nop',
+      'casi e',
+      'ni cerca',
+      'la próxima capaz',
+      'frío'
+    ];  
+    const numeroRandom = Math.floor(Math.random() * errores.length);
+
     if (valor.length === 7) {
       if (valor.toUpperCase() === 'SECRETA') {
         hayError(false);
+        setMensajeDeError(null);
+        setMensajeDeExito('Bieeennnn');
       }        
       else {
         hayError(true);
+        setMensajeDeExito(null);
+        setMensajeDeError(errores[numeroRandom]);
       }
     } else {
       hayError(false);
+      setMensajeDeExito(null);
+      setMensajeDeError(null);
     }
 
   }, [hayError, valor])
+
+
+
 
 
   return (
@@ -33,7 +54,9 @@ function InputSecreto({ hayError }: Props) {
         <div className={estilos.cursor}>
             <input className={estilos.input} maxLength={7} onChange={onChange} autoFocus value={valor} type="text"></input>
             {<i></i>}
-        </div>        
+        </div>
+        {mensajeDeError && <div className={estilos.mensajeError}>{mensajeDeError}</div>}
+        {mensajeDeExito && <div className={estilos.mensajeError}>{mensajeDeExito}</div>}
     </div>
   );
 }

@@ -18,6 +18,10 @@
   outline-color: black;
 }
 
+.mensajeError {
+  margin-top: 8px;
+}
+
 /* .cursor {
   position: relative;
 }
