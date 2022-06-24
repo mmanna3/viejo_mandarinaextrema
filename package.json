@@ -1,7 +1,7 @@
 {
   "name": "mandarinaextrema",
   "version": "0.1.0",
-  "homepage": "https://www.mandarinaextrema.com.ar",
+  "homepage": "https://mandarinaextrema.com.ar",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.1",
