@@ -1,5 +1,10 @@
 .imagen {
-  width: 300px; 
+  width: 300px;
+}
+
+.imagenAparece {
+  animation: shake 0.4s; 
+  animation-iteration-count: 1;
 }
 
 .imagen:hover {

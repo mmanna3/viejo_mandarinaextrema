@@ -19,7 +19,7 @@ function ImagenMandarina({mandarinaHeridaEsVisible}: IProps) {
   }, [mandarinaHeridaEsVisible])
 
   return (
-    <img className={Estilos.imagen} src={imagen} alt="mandarina"/>    
+    <img className={`${Estilos.imagen} ${mandarinaHeridaEsVisible ? Estilos.imagenAparece : ''}`} src={imagen} alt="mandarina"/>    
   );
 }
 
