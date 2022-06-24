@@ -1,8 +1,11 @@
 import { useState, useEffect } from 'react';
 import estilos from './Input.module.css';
 
-function InputSecreto() {
+interface Props {
+  hayError: Function;
+}
 
+function InputSecreto({ hayError }: Props) {
   const [valor, setValor] = useState<string>('');
 
   const onChange = (event: any) => {
@@ -11,13 +14,17 @@ function InputSecreto() {
 
   useEffect(() => {
     if (valor.length === 7) {
-      if (valor.toUpperCase() === 'SECRETA')      
-        alert('sos bueno e');
-      else
-        alert('nop');
+      if (valor.toUpperCase() === 'SECRETA') {
+        hayError(false);
+      }        
+      else {
+        hayError(true);
+      }
+    } else {
+      hayError(false);
     }
 
-  }, [valor])
+  }, [hayError, valor])
 
 
   return (

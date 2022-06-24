@@ -1,16 +1,21 @@
-import React from 'react';
-import mandarina from '../../resources/images/mandarina.png';
+import { useState } from 'react';
 import spotify from '../../resources/images/spotify.png';
 import instagram from '../../resources/images/instagram.png';
 import youtube from '../../resources/images/youtube.png';
 import './App.css';
 import InputSecreto from './input/Input';
+import ImagenMandarina from './imagenMandarina/ImagenMandarina';
 
 function App() {
+
+  const [mandarinaHeridaEsVisible, mostrarMandarinaHerida] = useState(false);
+
+  const hayError = (hay: boolean) => mostrarMandarinaHerida(hay);
+
   return (
-    <div className="contenedor-principal">
-    <img className="mandarina" src={mandarina} alt="mandarina"/>    
-    <InputSecreto/>    
+    <div className="contenedor-principal">    
+    <ImagenMandarina mandarinaHeridaEsVisible={mandarinaHeridaEsVisible}/>
+    <InputSecreto hayError={hayError}/>    
     {/* <div className="youtube-video-contenedor">
       <iframe height="250" width="320" title="cancion-para-desayunar" 
         src="https://www.youtube.com/embed/wAl7HHFWCIg">
