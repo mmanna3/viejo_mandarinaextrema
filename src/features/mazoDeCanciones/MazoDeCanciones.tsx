@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useSprings, animated, to as interpolate } from '@react-spring/web'
 import { useDrag } from '@use-gesture/react'
 import styles from './MazoDeCanciones.module.css'
+import Cancion from '../cancion/Cancion'
 
 const cards = [
   'https://upload.wikimedia.org/wikipedia/commons/f/f5/RWS_Tarot_08_Strength.jpg',
@@ -68,7 +69,7 @@ function MazoDeCanciones() {
               // backgroundImage: `url(${cards[i]})`,
             }}
           >
-            CANCIÓN
+            <Cancion titulo={"ALIEN"} letra={"Absdbds a a vfsa sa fsa fas fas fas f safas afs."}/>
           </animated.div>
         </animated.div>
       ))}

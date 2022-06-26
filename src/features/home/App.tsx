@@ -5,7 +5,7 @@ import youtube from '../../resources/images/youtube.png';
 import './App.css';
 import InputSecreto from './input/Input';
 import ImagenMandarina from './imagenMandarina/ImagenMandarina';
-import MazoDeCanciones from '../canciones/MazoDeCanciones';
+import MazoDeCanciones from '../mazoDeCanciones/MazoDeCanciones';
 
 function App() {
 
