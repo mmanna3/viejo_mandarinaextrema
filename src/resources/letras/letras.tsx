@@ -2,34 +2,34 @@ export const letras = [
     {
         titulo: "Recoleta",
         letra: `6 de la mañana, un frío asesino.
- Rutina indeleble, el mismo suspiro.
- Repleto el andén.
- Matinal sesión de contorsionismo.
- 
- Bostezos furtivos, rostros agrietados.
- La rubia teñida de escote pronunciado.
- También el señor          
- que no deja de mirarle las tetas.
- 
- Somos marionetas cumpliendo el estándar del orden social
- zombies eternos del buen capital
- 
- -¡Qué belleza, señor!-
- Halaga el operario por su Audi al patrón.
- Y éste le contesta
- si trabajás más duro
- algún día de estos... podré comprarme uno mejor
- 
- En la vereda, un lustra zapatos
- gana su moneda siempre arrodillado
- ante alguien mejor. 
- Me recuerda a feudo y proletariado.
- 
- Dos pibas valientes, labios sobre labios.
- Un tipo las mira con cara de asco.
- ¡Desaparecé!
- No tolero a los intolerantes.
- `
+Rutina indeleble, el mismo suspiro.
+Repleto el andén.
+Matinal sesión de contorsionismo.
+
+Bostezos furtivos, rostros agrietados.
+La rubia teñida de escote pronunciado.
+También el señor          
+que no deja de mirarle las tetas.
+
+Somos marionetas cumpliendo el estándar del orden social
+zombies eternos del buen capital
+
+-¡Qué belleza, señor!-
+Halaga el operario por su Audi al patrón.
+Y éste le contesta
+si trabajás más duro
+algún día de estos... podré comprarme uno mejor
+
+En la vereda, un lustra zapatos
+gana su moneda siempre arrodillado
+ante alguien mejor. 
+Me recuerda a feudo y proletariado.
+
+Dos pibas valientes, labios sobre labios.
+Un tipo las mira con cara de asco.
+¡Desaparecé!
+No tolero a los intolerantes.
+`
     },   
     {
         titulo: "Canción para desayunar",
