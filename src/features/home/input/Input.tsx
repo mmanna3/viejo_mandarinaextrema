@@ -3,9 +3,10 @@ import estilos from './Input.module.css';
 
 interface Props {
   hayError: Function;
+  escribioLaCorrecta: Function;
 }
 
-function InputSecreto({ hayError }: Props) {
+function InputSecreto({ hayError, escribioLaCorrecta }: Props) {
   const [valor, setValor] = useState<string>('');
   const [mensajeDeError, setMensajeDeError] = useState<string | null>(null);
   const [mensajeDeExito, setMensajeDeExito] = useState<string | null>(null);
@@ -33,7 +34,8 @@ function InputSecreto({ hayError }: Props) {
       if (valor.toUpperCase() === 'SECRETA') {
         hayError(false);
         setMensajeDeError(null);
-        setMensajeDeExito('Bieeennnn');
+        setMensajeDeExito('Biennnnnn. Mirá...');
+        escribioLaCorrecta();        
       } else if (valor.toUpperCase() === 'MANDARI') {
         hayError(true);
         setMensajeDeExito(null);

@@ -5,17 +5,32 @@ import youtube from '../../resources/images/youtube.png';
 import './App.css';
 import InputSecreto from './input/Input';
 import ImagenMandarina from './imagenMandarina/ImagenMandarina';
+import MazoDeCanciones from '../canciones/MazoDeCanciones';
 
 function App() {
 
   const [mandarinaHeridaEsVisible, mostrarMandarinaHerida] = useState(false);
+  const [mazoEsVisible, mostrarMazo] = useState(false);
 
   const hayError = (hay: boolean) => mostrarMandarinaHerida(hay);
 
+  const escribioLaCorrecta = () => {
+    setTimeout(() => {
+      mostrarMazo(true)
+    }, 2000)
+  };
+
+
   return (
-    <div className="contenedor-principal">    
-    <ImagenMandarina mandarinaHeridaEsVisible={mandarinaHeridaEsVisible}/>
-    <InputSecreto hayError={hayError}/>    
+    <div className="contenedor-principal"> 
+    {!mazoEsVisible ? 
+    <>
+      <ImagenMandarina mandarinaHeridaEsVisible={mandarinaHeridaEsVisible}/>
+      <InputSecreto hayError={hayError} escribioLaCorrecta={escribioLaCorrecta}/>
+    </> : 
+      <MazoDeCanciones/>
+    }    
+    
     {/* <div className="youtube-video-contenedor">
       <iframe height="250" width="320" title="cancion-para-desayunar" 
         src="https://www.youtube.com/embed/wAl7HHFWCIg">
