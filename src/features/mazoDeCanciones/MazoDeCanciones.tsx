@@ -35,7 +35,7 @@ function MazoDeCanciones() {
   })) // Create a bunch of springs using the helpers above
   // Create a gesture, we're interested in down-state, delta (current-pos - click-pos), direction and velocity
   const bind = useDrag(({ args: [index], active, movement: [mx], direction: [xDir], velocity: [vx] }) => {
-    const trigger = vx > 0.2 // If you flick hard enough it should trigger the card to fly out
+    const trigger = vx > 0.1 // If you flick hard enough it should trigger the card to fly out
     if (!active && trigger) gone.add(index) // If button/finger's up and trigger velocity is reached, we flag the card ready to fly out
     api.start(i => {
       if (index !== i) return // We're only interested in changing spring-data for the current spring
@@ -51,7 +51,7 @@ function MazoDeCanciones() {
         config: { friction: 50, tension: active ? 800 : isGone ? 200 : 500 },
       }
     })
-    if (!active && gone.size === cards.length)
+    if (!active && gone.size === letras.length)
       setTimeout(() => {
         gone.clear()
         api.start(i => to(i))
