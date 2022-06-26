@@ -22,8 +22,10 @@ function InputSecreto({ hayError }: Props) {
       'ni cerca',
       'la próxima capaz',
       'frío',
+      'leé mejor',
+      'estás leyendo mal',
       'próximamente: una pista',
-      'la pista: rima con receta'
+      'pista: rima con receta'
     ];  
     const numeroRandom = Math.floor(Math.random() * errores.length);
 
@@ -32,8 +34,11 @@ function InputSecreto({ hayError }: Props) {
         hayError(false);
         setMensajeDeError(null);
         setMensajeDeExito('Bieeennnn');
-      }        
-      else {
+      } else if (valor.toUpperCase() === 'MANDARI') {
+        hayError(true);
+        setMensajeDeExito(null);
+        setMensajeDeError('tan básico?');
+      } else {
         hayError(true);
         setMensajeDeExito(null);
         setMensajeDeError(errores[numeroRandom]);
