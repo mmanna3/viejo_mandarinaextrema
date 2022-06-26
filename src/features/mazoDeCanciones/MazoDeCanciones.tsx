@@ -3,6 +3,7 @@ import { useSprings, animated, to as interpolate } from '@react-spring/web'
 import { useDrag } from '@use-gesture/react'
 import styles from './MazoDeCanciones.module.css'
 import Cancion from '../cancion/Cancion'
+import { letras } from '../../resources/letras/letras';
 
 const cards = [
   'https://upload.wikimedia.org/wikipedia/commons/f/f5/RWS_Tarot_08_Strength.jpg',
@@ -28,7 +29,7 @@ const trans = (r: number, s: number) =>
 
 function MazoDeCanciones() {
   const [gone] = useState(() => new Set()) // The set flags all the cards that are flicked out
-  const [props, api] = useSprings(cards.length, i => ({
+  const [props, api] = useSprings(letras.length, i => ({
     ...to(i),
     from: from(i),
   })) // Create a bunch of springs using the helpers above
@@ -69,7 +70,7 @@ function MazoDeCanciones() {
               // backgroundImage: `url(${cards[i]})`,
             }}
           >
-            <Cancion titulo={"ALIEN"} letra={"Absdbds a a vfsa sa fsa fas fas fas f safas afs."}/>
+            <Cancion titulo={letras[i].titulo} letra={letras[i].letra}/>
           </animated.div>
         </animated.div>
       ))}

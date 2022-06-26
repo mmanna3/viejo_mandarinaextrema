@@ -15,9 +15,7 @@ function App() {
   const hayError = (hay: boolean) => mostrarMandarinaHerida(hay);
 
   const escribioLaCorrecta = () => {
-    setTimeout(() => {
       mostrarMazo(true)
-    }, 2000)
   };
 
 
