@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import estilos from './Cancion.module.css';
 import spotify from '../../resources/images/spotify.png'
 import youtube from '../../resources/images/youtube.png'
@@ -14,22 +15,32 @@ interface Props {
 }
 
 function Cancion({ cancion }: Props) {
+
+  const [enBreveEsVisible, mostrarEnBreve] = useState(false);
+
+  const mostrarMensajeEnBreve = (e: any) => {
+    if (!cancion.linkSpotify) {
+      e.preventDefault();
+      mostrarEnBreve(true);
+    }
+  }
+
   return (
     <div className={estilos.contenedor}>
-        <div className={estilos.titulo}>
-          
+        <div className={estilos.titulo}>          
           <span>  
-          {cancion.titulo}
+            {cancion.titulo}
           <span className={estilos.contenedorIconos}>
-            <a href={cancion.linkSpotify}>
+            <a href={cancion.linkSpotify} onClick={(e) => mostrarMensajeEnBreve(e)}>
               <img className={estilos.icono} src={spotify} alt="spotify"/>
             </a>
-            <a href={cancion.linkYoutube}>
+            <a href={cancion.linkYoutube} onClick={(e) => mostrarMensajeEnBreve(e)}>
               <img className={estilos.icono} src={youtube} alt="youtube"/>
             </a>
           </span> 
           </span>
         </div>
+        {enBreveEsVisible && <div className={estilos.enBreveContenedor}><span className={estilos.enBreve}>En breve</span></div>}
         <div className={estilos.letra}>
             {cancion.letra}
         </div>

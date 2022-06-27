@@ -28,3 +28,17 @@
   filter: grayscale(0.9);
   margin-left: 4px;
 }
+
+.enBreveContenedor {
+  margin-bottom: 20px;
+  margin-top: 15px;
+  margin-left: -3px;
+}
+
+.enBreve {
+  padding: 8px;  
+  background-color: orange;
+  border: 2px solid grey;
+  border-radius: 10px;
+  font-weight: 500;
+}
