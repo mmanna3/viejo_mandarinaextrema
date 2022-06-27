@@ -1,5 +1,9 @@
-export const letras = [
+import { TCancion } from "../../features/cancion/Cancion";
+
+export const letras: TCancion[] = [
     {
+        linkSpotify: '',
+        linkYoutube: '',
         titulo: "Recoleta",
         letra: `6 de la mañana, un frío asesino.
 Rutina indeleble, el mismo suspiro.
@@ -32,6 +36,8 @@ No tolero a los intolerantes.
 `
     },   
     {
+        linkSpotify: 'https://spoti.fi/3xGGT5z',
+        linkYoutube: 'https://www.youtube.com/watch?v=wAl7HHFWCIg',
         titulo: "Canción para desayunar",
         letra: `Me gusta fumar en la terraza con vos mi amor
 mientras el mundo se diluye
@@ -65,6 +71,8 @@ Extraño fumar en la terraza con vos mi amor
 mientras el mundo se diluye`
     },    
     {
+        linkSpotify: 'https://open.spotify.com/track/5Y7T47H9y0LoovZpgusS8J?si=c542266e552d4d44',
+        linkYoutube: 'https://www.youtube.com/watch?v=NezCB_fjOYI',
         titulo: "Las palabras",
         letra: `Qué cosa extraña
 las palabras
@@ -89,6 +97,8 @@ Y vos no apareciste
 Ni aparecerás`
     },
     {
+        linkSpotify: 'https://bit.ly/mandarina-cheesecake',
+        linkYoutube: 'https://www.youtube.com/watch?v=zXQEMlgUmzU',
         titulo: "Cheesecake",
         letra: `Ojos de océano
 desafiando mi yo cuerdo
@@ -162,6 +172,8 @@ Nos condena al desquicio de guerras nuevas
 `
     }
     ,{
+        linkSpotify: 'http://bit.ly/mandarinaextrema-alien',
+        linkYoutube: 'https://www.youtube.com/watch?v=2bJT-rc2NZo',
         titulo: "Alien",
         letra: `Creo que ya lo dijo un sabio en una canción hace tiempo
 "Todas las cosas tienen movimiento"

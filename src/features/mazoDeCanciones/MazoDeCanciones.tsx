@@ -70,7 +70,7 @@ function MazoDeCanciones() {
               // backgroundImage: `url(${cards[i]})`,
             }}
           >
-            <Cancion titulo={letras[i].titulo} letra={letras[i].letra}/>
+            <Cancion cancion={letras[i]}/>
           </animated.div>
         </animated.div>
       ))}

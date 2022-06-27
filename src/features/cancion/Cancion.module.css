@@ -7,6 +7,8 @@
   font-weight: 500;
   font-size: 24px;
   margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .letra {
@@ -15,4 +17,14 @@
   overflow-y: auto;
   height: 450px;
   padding-right: 8px;
+}
+
+.icono {
+  height: 24px;
+  margin-left: 4px;
+}
+
+.contenedorIconos {
+  filter: grayscale(0.9);
+  margin-left: 4px;
 }
