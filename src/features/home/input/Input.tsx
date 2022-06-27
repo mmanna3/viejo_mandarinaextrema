@@ -24,7 +24,7 @@ function InputSecreto({ hayError, escribioLaCorrecta }: Props) {
       'la próxima capaz',
       'frío',
       'leé mejor',
-      'estás leyendo mal',
+      'estás viendo la respuesta',
       'próximamente: una pista',
       'pista: rima con receta'
     ];  
@@ -39,7 +39,7 @@ function InputSecreto({ hayError, escribioLaCorrecta }: Props) {
       } else if (valor.toUpperCase() === 'MANDARI') {
         hayError(true);
         setMensajeDeExito(null);
-        setMensajeDeError('tan básico?');
+        setMensajeDeError('tan básico no');
       } else {
         hayError(true);
         setMensajeDeExito(null);
