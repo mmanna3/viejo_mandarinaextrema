@@ -1,12 +1,11 @@
-import { useEffect, useState } from 'react';
-import spotify from '../../resources/images/spotify.png';
+import { useState } from 'react';
 import instagram from '../../resources/images/instagram.png';
+import spotify from '../../resources/images/spotify.png';
 import youtube from '../../resources/images/youtube.png';
-import './PantallaPrincipal.css';
-import InputSecreto from './input/Input';
-import ImagenMandarina from './imagenMandarina/ImagenMandarina';
 import MazoDeCanciones from '../mazoDeCanciones/MazoDeCanciones';
-import { escucharEscritos, IEscrito } from '../../firebase';
+import ImagenMandarina from './imagenMandarina/ImagenMandarina';
+import InputSecreto from './input/Input';
+import './PantallaPrincipal.css';
 
 function App() {
 
@@ -18,16 +17,6 @@ function App() {
   const escribioLaCorrecta = () => {
       mostrarMazo(true)
   };
-
-	useEffect(() => {
-		const callback = (_escritos: IEscrito[]) => {			
-			console.table(_escritos);
-			// setEscritos(_escritos);
-		};
-		
-    escucharEscritos(callback);
-	}, []);
-
 
   return (
     <div className="contenedor-principal"> 

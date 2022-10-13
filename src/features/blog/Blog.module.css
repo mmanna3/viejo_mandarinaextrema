@@ -1,0 +1,44 @@
+.contenedor {
+  margin: 30px;
+  
+}
+
+.titulo {
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.letra {
+  white-space: pre-wrap;
+  line-height: 1.6;    
+  overflow-y: auto;
+  height: 450px;
+  padding-right: 8px;
+}
+
+.icono {
+  height: 24px;
+  margin-left: 4px;
+}
+
+.contenedorIconos {
+  filter: grayscale(0.9);
+  margin-left: 4px;
+}
+
+.enBreveContenedor {
+  margin-bottom: 20px;
+  margin-top: 15px;
+  margin-left: -3px;
+}
+
+.enBreve {
+  padding: 8px;  
+  background-color: orange;
+  border: 2px solid grey;
+  border-radius: 10px;
+  font-weight: 500;
+}
