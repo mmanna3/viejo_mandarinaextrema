@@ -1,11 +1,11 @@
 import { TCancion } from "../../features/cancion/Cancion";
 
 export const letras: TCancion[] = [
-    {
-        linkSpotify: '',
-        linkYoutube: '',
-        titulo: "Recoleta",
-        letra: `Reloj en las 7, un frío asesino
+	{
+		linkSpotify: "",
+		linkYoutube: "",
+		titulo: "Recoleta",
+		letra: `Reloj en las 7, un frío asesino
 Rutina indeleble, el mismo suspiro
 Repleto el andén
 Matinal sesión de contorsionismo
@@ -34,12 +34,12 @@ gana su moneda siempre arrodillado
 ante alguien mejor
 Me recuerda a feudo y proletariado
 `
-    },   
-    {
-        linkSpotify: 'https://spoti.fi/3xGGT5z',
-        linkYoutube: 'https://www.youtube.com/watch?v=wAl7HHFWCIg',
-        titulo: "Canción para desayunar",
-        letra: `Me gusta fumar en la terraza con vos mi amor
+	},   
+	{
+		linkSpotify: "https://spoti.fi/3xGGT5z",
+		linkYoutube: "https://www.youtube.com/watch?v=wAl7HHFWCIg",
+		titulo: "Canción para desayunar",
+		letra: `Me gusta fumar en la terraza con vos mi amor
 mientras el mundo se diluye
 
 Compré castañas de cajú que se que te encantan
@@ -69,12 +69,12 @@ que pasaron muchas cosas
 
 Extraño fumar en la terraza con vos mi amor
 mientras el mundo se diluye`
-    },    
-    {
-        linkSpotify: 'https://open.spotify.com/track/5Y7T47H9y0LoovZpgusS8J?si=c542266e552d4d44',
-        linkYoutube: 'https://www.youtube.com/watch?v=NezCB_fjOYI',
-        titulo: "Las palabras",
-        letra: `Qué cosa extraña
+	},    
+	{
+		linkSpotify: "https://open.spotify.com/track/5Y7T47H9y0LoovZpgusS8J?si=c542266e552d4d44",
+		linkYoutube: "https://www.youtube.com/watch?v=NezCB_fjOYI",
+		titulo: "Las palabras",
+		letra: `Qué cosa extraña
 las palabras
 
 A veces escasean
@@ -95,12 +95,12 @@ Otro invierno se acercará
 Y vos no apareciste
 
 Ni aparecerás`
-    },
-    {
-        linkSpotify: 'https://bit.ly/mandarina-cheesecake',
-        linkYoutube: 'https://www.youtube.com/watch?v=zXQEMlgUmzU',
-        titulo: "Cheesecake",
-        letra: `Ojos de océano
+	},
+	{
+		linkSpotify: "https://bit.ly/mandarina-cheesecake",
+		linkYoutube: "https://www.youtube.com/watch?v=zXQEMlgUmzU",
+		titulo: "Cheesecake",
+		letra: `Ojos de océano
 desafiando mi yo cuerdo
 Una voz en off diciendo
 ¿estás seguro de esto?
@@ -170,12 +170,12 @@ Su afán por las frutillas y por las reinas
 Nos condena al desquicio de guerras nuevas
 )))
 `
-    }
-    ,{
-        linkSpotify: 'http://bit.ly/mandarinaextrema-alien',
-        linkYoutube: 'https://www.youtube.com/watch?v=2bJT-rc2NZo',
-        titulo: "Alien",
-        letra: `Creo que ya lo dijo un sabio en una canción hace tiempo
+	}
+	,{
+		linkSpotify: "http://bit.ly/mandarinaextrema-alien",
+		linkYoutube: "https://www.youtube.com/watch?v=2bJT-rc2NZo",
+		titulo: "Alien",
+		letra: `Creo que ya lo dijo un sabio en una canción hace tiempo
 "Todas las cosas tienen movimiento"
 "Si las historias terminan, no está mal
 mientras haya historias que contar"
@@ -216,5 +216,5 @@ no volver a sentir así por nadie pero
 "Si las historias terminan, no está mal
 mientras haya historias que contar"
 `
-    }
-]
+	}
+];

@@ -3,10 +3,10 @@ import PantallaPrincipal from "./features/home/PantallaPrincipal";
 import Blog from "./features/blog/Blog";
 
 const App = () => {
-    return  <Routes>
-                <Route path="/" element={<PantallaPrincipal />} />
-                <Route path="blog" element={<Blog />} />
-            </Routes>
-}
+	return  <Routes>
+		<Route path="/" element={<PantallaPrincipal />} />
+		<Route path="blog" element={<Blog />} />
+	</Routes>;
+};
 
 export default App;

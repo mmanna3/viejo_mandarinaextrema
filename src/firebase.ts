@@ -37,7 +37,7 @@ function compararFechas(a: IEscrito, b: IEscrito) {
 export const escucharEscritos = (callback: (data: IEscrito[]) => void) => {	
 	const dbRef = ref(db, "blog");
 	onValue(dbRef, (snapshot: DataSnapshot) => {
-        console.log(snapshot);
+		console.log(snapshot);
 		const resultado: IEscrito[] = [];
 		
 		snapshot.forEach((child: DataSnapshot) => {
@@ -59,7 +59,7 @@ export const obtenerEscrito = (id: string, callback: (data: IEscrito) => void) =
 		} else {
 		  console.log("No se encontró el escrito");
 		}
-	  }).catch((error: any) => {
+	  }).catch((error: unknown) => {
 		console.error(error);
 	  });
 };
