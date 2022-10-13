@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import spotify from '../../resources/images/spotify.png';
 import instagram from '../../resources/images/instagram.png';
 import youtube from '../../resources/images/youtube.png';
-import './App.css';
+import './PantallaPrincipal.css';
 import InputSecreto from './input/Input';
 import ImagenMandarina from './imagenMandarina/ImagenMandarina';
 import MazoDeCanciones from '../mazoDeCanciones/MazoDeCanciones';
