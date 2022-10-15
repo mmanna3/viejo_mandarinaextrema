@@ -21,7 +21,8 @@ const Blog = () => {
 
 
 	return (
-		<Grid container   
+		<Grid container
+			padding="2rem 1rem"   
 			alignItems="center"
 			justifyContent="center">
 			<List sx={{ width: "100%", bgcolor: "background.paper" }}>

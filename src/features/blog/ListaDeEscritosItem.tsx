@@ -11,9 +11,12 @@ const Escrito = (escrito: IEscritoInput) => {
 	const navigate = useNavigate();
 	const obtenerResumen = (texto: string) => texto.slice(0, 20) + (texto.length > 20 ? "..." : ""); 
 
+	const fecha = new Date(escrito.fechaHora);
+	const meses = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+
 	return <Grid padding="0.8rem 2rem" onClick={() => navigate(escrito.id)}>
 		<Typography variant="body2" style={{fontFamily: "monospace", color: "#333", fontSize: "0.7rem"}} component="div">
-			{escrito.fechaHora.substring(0, 10)}
+			{`${fecha.getDate()} de ${meses[fecha.getMonth()]}`}
 		</Typography>
 		<Typography variant="body1" style={{fontFamily: "monospace", fontSize: "1rem"}} component="div">
 			{escrito.titulo}
