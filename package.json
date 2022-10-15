@@ -4,6 +4,9 @@
   "homepage": "https://mandarinaextrema.com.ar",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@mui/material": "^5.10.9",
     "@react-spring/web": "^9.4.5",
     "@reduxjs/toolkit": "^1.8.1",
     "@testing-library/jest-dom": "^5.16.4",
