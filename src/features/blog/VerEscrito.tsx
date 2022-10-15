@@ -20,7 +20,7 @@ const VerEscrito = () => {
 			
 	}, [escritoId]);
 
-	return <Grid paddingLeft="2em">
+	return <Grid padding="2rem">
 		<Typography variant="h5" gutterBottom>
 			<pre>{titulo}</pre>
 		</Typography>

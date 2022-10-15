@@ -11,7 +11,7 @@ const Escrito = (escrito: IEscritoInput) => {
 	const navigate = useNavigate();
 	const obtenerResumen = (texto: string) => texto.slice(0, 20) + (texto.length > 20 ? "..." : ""); 
 
-	return <Grid padding="0.8rem 1rem" onClick={() => navigate(escrito.id)}>
+	return <Grid padding="0.8rem 2rem" onClick={() => navigate(escrito.id)}>
 		<Typography variant="body2" style={{fontFamily: "monospace", color: "#333", fontSize: "0.7rem"}} component="div">
 			{escrito.fechaHora.substring(0, 10)}
 		</Typography>

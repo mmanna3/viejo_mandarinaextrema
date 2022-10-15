@@ -28,7 +28,7 @@ const Blog = () => {
 				{escritos.map((escrito: IEscrito) => (
 					<Grid item xs={12} key={escrito.id}>
 						<ListaDeEscritosItem {...escrito} />
-						<Divider variant='inset' component='li' />
+						<hr style={{width: "18rem", textAlign: "left", marginLeft: "3rem"}}></hr>
 					</Grid>
 				))}
 			</List>
