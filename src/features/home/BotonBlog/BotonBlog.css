@@ -6,6 +6,10 @@
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   background-color: white;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  color: #000;
+  display: inline-block;
 }
 
 @media only screen and (min-width: 768px) {
