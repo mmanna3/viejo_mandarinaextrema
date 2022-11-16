@@ -12,6 +12,7 @@ function App() {
 
 	const [mandarinaHeridaEsVisible, mostrarMandarinaHerida] = useState(false);
 	const [mazoEsVisible, mostrarMazo] = useState(false);
+	const [apretoLaMandarina, apretarLaMandarina] = useState(false);
 
 	const hayError = (hay: boolean) => mostrarMandarinaHerida(hay);
 
@@ -26,8 +27,8 @@ function App() {
 			</div>			
 			{!mazoEsVisible ? 
 				<>
-					<ImagenMandarina mandarinaHeridaEsVisible={mandarinaHeridaEsVisible}/>
-					<InputSecreto hayError={hayError} escribioLaCorrecta={escribioLaCorrecta}/>
+					<ImagenMandarina mandarinaHeridaEsVisible={mandarinaHeridaEsVisible} cuandoLaApreten={() => apretarLaMandarina((prev) => !prev)} />
+					{apretoLaMandarina && <InputSecreto hayError={hayError} escribioLaCorrecta={escribioLaCorrecta}/>}					
 				</> : 
 				<MazoDeCanciones/>
 			}    

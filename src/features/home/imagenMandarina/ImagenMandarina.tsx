@@ -5,9 +5,10 @@ import mandarinaHerida from "../../../resources/images/mandarina_herida.png";
 
 interface IProps {
   mandarinaHeridaEsVisible: boolean;
+  cuandoLaApreten: () => void;
 }
 
-function ImagenMandarina({mandarinaHeridaEsVisible}: IProps) {
+function ImagenMandarina({mandarinaHeridaEsVisible, cuandoLaApreten}: IProps) {
 	const [imagen, setImagen] = useState(mandarina);
 
 	useEffect(() => {
@@ -19,7 +20,12 @@ function ImagenMandarina({mandarinaHeridaEsVisible}: IProps) {
 	}, [mandarinaHeridaEsVisible]);
 
 	return (
-		<img className={`${Estilos.imagen} ${mandarinaHeridaEsVisible ? Estilos.imagenAparece : ""}`} src={imagen} alt="mandarina"/>    
+		<img 
+			className={`${Estilos.imagen} ${mandarinaHeridaEsVisible ? Estilos.imagenAparece : ""}`} 
+			onClick={() => cuandoLaApreten()}
+			src={imagen} 
+			alt="mandarina"
+		/>    
 	);
 }
 
