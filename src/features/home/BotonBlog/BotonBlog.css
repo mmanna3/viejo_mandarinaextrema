@@ -1,0 +1,21 @@
+.boton {
+  font-family: 'Neucha', sans-serif !important;
+  font-size: 16px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  /*Para desktop*/
+  
+  .boton {
+    font-size: 18px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
