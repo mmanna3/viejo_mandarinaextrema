@@ -1,10 +1,15 @@
 import "./BotonBlog.css";
 import { useNavigate } from "react-router-dom";
 
-function BotonBlog() {
-	const navigate = useNavigate();
-
-	return <button className="boton" onClick={() => navigate("/blog")}>Blog</button>;
+interface Props {
+	texto: string;
+	url: string;
 }
 
-export default BotonBlog;
+function BotonNavegacion(props: Props) {
+	const navigate = useNavigate();
+
+	return <button className="boton" onClick={() => navigate(props.url)}>{props.texto}</button>;
+}
+
+export default BotonNavegacion;

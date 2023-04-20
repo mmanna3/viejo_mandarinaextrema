@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { escucharEscritos, IEscrito } from "../../firebase";
 import ListaDeEscritosItem from "./ListaDeEscritosItem";
 import List from "@mui/material/List";
-import Divider from "@mui/material/Divider";
 import Grid from "@mui/material/Grid";
 import "./Blog.module.css";
 

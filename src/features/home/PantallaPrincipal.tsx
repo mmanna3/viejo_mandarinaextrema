@@ -5,7 +5,7 @@ import youtube from "../../resources/images/youtube.png";
 import MazoDeCanciones from "../mazoDeCanciones/MazoDeCanciones";
 import ImagenMandarina from "./imagenMandarina/ImagenMandarina";
 import InputSecreto from "./input/Input";
-import BotonBlog from "./BotonBlog/BotonBlog";
+import BotonNavegacion from "./BotonBlog/BotonBlog";
 import "./PantallaPrincipal.css";
 
 function App() {
@@ -22,8 +22,9 @@ function App() {
 
 	return (
 		<div className="contenedor-principal">
-			<div className="contenedor-boton-blog">
-				<BotonBlog/>
+			<div className="contenedor-boton-blog">				
+				<BotonNavegacion texto="covers" url="/covers"/>
+				<BotonNavegacion texto="blog" url="/blog"/>
 			</div>			
 			{!mazoEsVisible ? 
 				<>
